@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== GLOBAL STYLES ===== */
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family: 'Inter', sans-serif; background:#f9f9f9; color:#1a1a1a; line-height:1.6;}
+    a {text-decoration:none; color:inherit;}
+    h1,h2,h3 {margin-bottom:0.5rem;}
+    .container {max-width:1000px; margin:0 auto; padding:2rem;}
+    .section {margin-bottom:4rem;}
+    .flex {display:flex; gap:1rem; flex-wrap:wrap;}
+    .btn {padding:0.5rem 1rem; border:2px solid #1a1a1a; border-radius:8px; cursor:pointer; transition:0.3s;}
+    .btn:hover {background:#1a1a1a; color:#fff;}
+    .card {background:#fff; padding:1rem; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.05);}
+    .badge {background:#e2e8f0; padding:0.2rem 0.6rem; border-radius:999px; font-size:0.8rem;}
+    ul {list-style:disc inside;}
+  </style>
+</head>
+<body style="background-color:red;">
+
+  <!-- ===== HEADER ===== -->
+  <header class="container flex" style="justify-content:space-between; align-items:center;">
+    <h1>Your Name</h1>
+    <nav class="flex">
+      <a href="#about" class="btn" >About</a>
+      <a href="#skills" class="btn">Skills</a>
+      <a href="#projects" class="btn">Projects</a>
+      <a href="#experience" class="btn">Experience</a>
+      <a href="#contact" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO / ABOUT ===== -->
+  <section id="about" class="container section">
+    <h2 style="color:blue;">About Me</h2>
+    <p>Hi, I'm <strong>Your Name</strong>, a Full-Stack Developer. I build fast, responsive, and accessible web apps.</p>
+    <div class="flex" style="margin-top:1rem;">
+      <span class="badge">JavaScript</span>
+      <span class="badge">HTML</span>
+      <span class="badge">CSS</span>
+      <span class="badge">Node.js</span>
+      <span class="badge">Python</span>
+    </div>
+    <div class="flex" style="margin-top:1rem;">
+      <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="container section">
+    <h2>Skills</h2>
+    <div class="flex">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React</div>
+      <div class="card">Node.js</div>
+      <div class="card">Python</div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="container section">
+    <h2>Projects</h2>
+    <div class="flex">
+      <div class="card">
+        <h3>PPE Detection</h3>
+        <p>Real-time computer vision app for detecting PPE compliance on construction sites.</p>
+        <div class="flex" style="margin-top:0.5rem;">
+          <a href="#" class="btn" target="_blank">GitHub</a>
+          <a href="#" class="btn" target="_blank">Demo</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Fuel Consumption Prediction</h3>
+        <p>Machine Learning app to optimize vehicle fuel efficiency.</p>
+        <div class="flex" style="margin-top:0.5rem;">
+          <a href="#" class="btn" target="_blank">GitHub</a>
+          <a href="#" class="btn" target="_blank">Demo</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Virtual HR</h3>
+        <p>AI-assisted recruitment system with resume screening.</p>
+        <div class="flex" style="margin-top:0.5rem;">
+          <a href="#" class="btn" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="container section">
+    <h2>Experience</h2>
+    <div class="card" style="margin-bottom:1rem;">
+      <h3>Full-Stack Developer (Intern) — TVM Infotech</h3>
+      <p>Jun 2024 – Sep 2024</p>
+      <ul>
+        <li>Built CRUD apps with Node.js and front-end frameworks.</li>
+        <li>Implemented CI/CD with GitHub Actions and Docker.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Frontend Developer — Freelance</h3>
+      <p>2023 – Present</p>
+      <ul>
+        <li>Designed responsive SPAs with HTML, CSS, JS.</li>
+        <li>Integrated payment gateways; optimized performance.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="container section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourhandle" target="_blank">yourhandle</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourhandle" target="_blank">yourhandle</a></p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="container section" style="text-align:center;">
+    <p>© 2025 Your Name. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <!-- ===== OPTIONAL JS for smooth scrolling ===== -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+      anchor.addEventListener('click', function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+
+</body>
+</html>
